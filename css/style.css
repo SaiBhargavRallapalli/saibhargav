@@ -3,48 +3,118 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-:root{
+
+:root {
     --primary-color: #2563EB;
-    --dark-gray:#6B7280;
+    --dark-gray: #6B7280;
+    --offwhite: #DBEAFE;
+    /* --offwhite: #D1D5DB; */
 }
-.link{
+
+.link {
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
-.list-item-inline{
+
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+}
+
+.ow {
+    background-color: var(--offwhite);
+}
+
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+.list-item-inline {
     display: inline;
     padding: 0rem 0.5rem;
 }
 
-.navigation{
+.navigation {
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
-    border-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
-.navigation .link{
+
+.navigation .link {
     color: white;
 }
-.navigation .nav-brand{
-    font-weight: bold ;
+
+.navigation .nav-brand {
+    font-weight: bold;
     font-size: x-large;
 }
-.navigation .nav-pills{
-    text-align: right ;
+
+.navigation .nav-pills {
+    text-align: right;
 }
-.navigation .link-active{
+
+.navigation .link-active {
     font-weight: bold;
 }
-.hero{
+
+.hero {
     padding: 2rem;
 }
-.hero .hero-img{
+
+.hero .hero-img {
     max-width: 250px;
-    display: block ;
+    display: block;
     margin: auto;
 }
-.hero .hero-heading{
+
+.hero .hero-heading {
     padding-top: 1rem;
-color: var(--dark-gray);
-margin: auto;
+    color: var(--dark-gray);
+    margin: auto;
+    text-align: center;
+}
+
+/* footers */
+.footer {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    text-align: center;
+    color: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: small;
+}
+
+.footer .link {
+    text-align: center;
+}
+
+.footer {
+    padding-inline-start: 0px;
 }
