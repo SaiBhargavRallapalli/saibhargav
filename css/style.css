@@ -2,6 +2,9 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0px auto;
+    max-width: 85%;
+    width: 100%;
 }
 
 :root {
@@ -10,26 +13,46 @@ body {
     --offwhite: #DBEAFE;
     /* --offwhite: #D1D5DB; */
 }
+
+hr {
+    margin: 2rem 0rem;
+}
+
+.margin-md {
+    margin: 2rem;
+}
+
 /* links */
 .link {
+    box-sizing: border-box;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
 
 .link-primary {
+    max-width: 140px;
+    padding: 0.5rem 1rem;
     background-color: var(--primary-color);
+    color: #fff;
+    margin: 1rem auto;
     border-radius: 0.5rem;
-    color: white;
 }
 
 .link-secondary {
-    color: var(--primary-color);
+    max-width: 140px;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
+
 /* section */
 .section {
     padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    text-align: center;
 }
 
 .section h1 {
@@ -39,6 +62,7 @@ body {
 .ow {
     background-color: var(--offwhite);
 }
+
 /* container */
 
 .container {
@@ -47,6 +71,7 @@ body {
 
 .container-center {
     max-width: 600px;
+    width: 100%;
     margin: auto;
 }
 
@@ -54,6 +79,12 @@ body {
     display: inline;
     padding: 0rem 0.5rem;
 }
+
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
 /* navigation */
 .navigation {
     background-color: var(--primary-color);
@@ -69,23 +100,31 @@ body {
 
 .navigation .nav-brand {
     font-weight: bold;
-    font-size: x-large;
+}
+
+.nav-brand a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .navigation .nav-pills {
     text-align: right;
+    margin: 0.5rem 1rem;
 }
 
 .navigation .link-active {
     font-weight: bold;
 }
+
 /* header */
 .hero {
     padding: 2rem;
+    padding-top: 5rem;
 }
 
 .hero .hero-img {
-    max-width: 250px;
+    max-width: 80%;
+    width: 250px;
     display: block;
     margin: auto;
 }
@@ -93,29 +132,34 @@ body {
 .hero .hero-heading {
     padding-top: 1rem;
     color: var(--dark-gray);
-    margin: auto;
     text-align: center;
 }
 
 /* footers */
 .footer {
     background-color: var(--primary-color);
-    padding: 1rem 2rem;
+    padding: 2rem 1rem;
     text-align: center;
     color: white;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
 
+
 .footer .footer-header {
     font-weight: bold;
     font-size: small;
 }
 
-.footer .link {
-    text-align: center;
+.footer .footer-footer {
+    font-weight: bold;
+    font-size: small;
 }
 
-.footer {
-    padding-inline-start: 0px;
+.footer .link {
+    color: white;
 }
+.footer ul {
+    padding-inline-start: 2px;
+  }
+
