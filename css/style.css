@@ -125,13 +125,14 @@ hr {
 .navigation .link-active {
     font-weight: bold;
 }
+
 .avatar {
     margin-right: 1%;
-    float:left; 
+    float: left;
     width: 60px;
     height: 65px;
     border-radius: 75%;
-  }
+}
 
 /* header */
 .hero {
@@ -161,7 +162,6 @@ hr {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
-
 
 .footer .footer-header {
     font-weight: bold;
@@ -209,63 +209,74 @@ hr {
 
 /* Experience */
 
- .timeline {  
-  margin: 0 auto;  
-  max-width: 750px;  
-  padding: 25px;  
-  display: grid;  
-  grid-template-columns: 1fr 3px 1fr;  
-  font-family: "Fira Sans", sans-serif;  
-  color: #777777;  
- }  
- .timeline__component {  
-  margin: 0 20px 20px 20px;  
- }  
- .timeline__component--bg {  
-  padding: 1.5em;  
-  background: rgba(255, 255, 255, 0.2);  
-  box-shadow: 0 0 3px #106fb4;  
-  border-radius: 10px;  
- }  
- /* LEAVE TILL LAST */  
- .timeline__component--bottom {  
-  margin-bottom: 0;  
- }  
- .timeline__middle {  
-  position: relative;  
-  background: #d6d6d6;  
- }  
- .timeline__point {  
-  position: absolute;  
-  top: 0;  
-  left: 50%;  
-  transform: translateX(-50%);  
-  width: 15px;  
-  height: 15px;  
-  background: #3F8BC3;  
-  border-radius: 50%;  
- }  
- /* LEAVE TILL LAST */  
- .timeline__point--bottom {  
-  top: initial;  
-  bottom: 0;  
- }  
- .timeline__date--right {  
-  text-align: right;  
-  color: #106fb4;  
- }  
- .timeline__title {  
-  margin: 0;  
-  font-size: 1.15em;  
-  font-weight: bold;  
-  color: var(--primary-color);  
- }  
- .timeline__paragraph {  
-  line-height: 1.5;  
- }  
- .timeline__date {  
-  color: #106fb4;  
- }  
- .titol {  
-  font-style: italic;  
- }  
+.timeline {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    font-family: "Fira Sans", sans-serif;
+    color: #777777;
+}
+
+.timeline__component {
+    margin: 0 20px 20px 20px;
+}
+
+.timeline__component--bg {
+    padding: 1.5em;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 3px #106fb4;
+    border-radius: 10px;
+}
+
+/* LEAVE TILL LAST */
+.timeline__component--bottom {
+    margin-bottom: 0;
+}
+
+.timeline__middle {
+    position: relative;
+    background: #d6d6d6;
+}
+
+.timeline__point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: #3F8BC3;
+    border-radius: 50%;
+}
+
+/* LEAVE TILL LAST */
+.timeline__point--bottom {
+    top: initial;
+    bottom: 0;
+}
+
+.timeline__date--right {
+    text-align: right;
+    color: #106fb4;
+}
+
+.timeline__title {
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.timeline__paragraph {
+    line-height: 1.5;
+}
+
+.timeline__date {
+    color: #106fb4;
+}
+
+.titol {
+    font-style: italic;
+}
