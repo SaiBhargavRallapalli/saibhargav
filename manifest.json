@@ -1,0 +1,17 @@
+{
+    "name": "Sai Bhargav Rallapalli",
+    "short_name": "Sai Bhargav",
+    "description": "Conversational AI engineer — voice assistants, agents, and LLM-powered products.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#f4f6fb",
+    "theme_color": "#2563eb",
+    "icons": [
+        {
+            "src": "images/botvoice.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ]
+}

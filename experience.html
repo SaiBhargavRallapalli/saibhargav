@@ -7,30 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional experience of Sai Bhargav Rallapalli in conversational AI and voice products.">
     <meta name="theme-color" content="#2563eb">
+    <link rel="manifest" href="manifest.json">
     <title>Experience | Sai Bhargav Rallapalli</title>
     <link href="css/style.css" rel="stylesheet">
+    <script>
+        (function () {
+            var k = "portfolio-theme", s = localStorage.getItem(k);
+            var t = s || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            document.documentElement.setAttribute("data-theme", t);
+        })();
+    </script>
 </head>
 
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="site-shell">
+        <div class="bg-canvas" aria-hidden="true">
+            <div class="bg-dots"></div>
+            <div class="bg-orb bg-orb--1"></div>
+            <div class="bg-orb bg-orb--2"></div>
+        </div>
+
         <nav class="site-nav" data-site-nav aria-label="Primary">
             <div class="nav-brand"><a href="index.html">Sai Bhargav Rallapalli</a></div>
-            <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-menu"
-                aria-label="Open menu">
-                <span class="nav-toggle-bar" aria-hidden="true"></span>
-            </button>
-            <ul class="nav-links" id="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a class="is-active" href="experience.html" aria-current="page">Experience</a></li>
-                <li><a href="blogs.html">Writing</a></li>
-            </ul>
+            <div class="nav-end">
+                <ul class="nav-links" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a class="is-active" href="experience.html" aria-current="page">Experience</a></li>
+                    <li><a href="blogs.html">Writing</a></li>
+                </ul>
+                <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle color theme">
+                    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5Z" />
+                    </svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm0 4v-2m0-16V2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42M2 12h2m16 0h2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false"
+                    aria-controls="nav-menu" aria-label="Open menu">
+                    <span class="nav-toggle-bar" aria-hidden="true"></span>
+                </button>
+            </div>
         </nav>
 
         <main id="main">
             <header class="page-hero">
-                <div class="container">
+                <div class="container reveal">
                     <h1>Experience</h1>
                     <p>Building conversational systems end-to-end — platforms, channels, and models in production.</p>
                 </div>
@@ -39,7 +63,7 @@
             <section class="section section--tight" aria-label="Work history">
                 <div class="container">
                     <ol class="timeline">
-                        <li class="timeline-item">
+                        <li class="timeline-item reveal">
                             <article class="timeline-card">
                                 <h2>Reliance Jio Infocomm Ltd.</h2>
                                 <span class="timeline-role">Software Development Engineer II</span>
@@ -51,7 +75,7 @@
                                 </p>
                             </article>
                         </li>
-                        <li class="timeline-item">
+                        <li class="timeline-item reveal reveal-delay-1">
                             <article class="timeline-card">
                                 <h2>Reliance Jio Infocomm Ltd.</h2>
                                 <span class="timeline-role">Consultant</span>
@@ -60,7 +84,7 @@
                                     role — voice, channels, and partner integrations.</p>
                             </article>
                         </li>
-                        <li class="timeline-item">
+                        <li class="timeline-item reveal reveal-delay-2">
                             <article class="timeline-card">
                                 <h2>Data Semantics</h2>
                                 <span class="timeline-role">Software Engineer</span>
